@@ -1,3 +1,6 @@
 # Can't keep the ROM itself
 *.sfc
 
+# Don't want to keep the assembly when we can produce it.
+*.snes-asm
+
