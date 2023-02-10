@@ -10,20 +10,32 @@ Yeah, it's not Turbo. Weird decision, I know. However, if we get the source, we 
 
 So yeah, I want to 1) build for PC, 2) upgrade graphics, 3) add mechanics, specifically parries from SFII Third Strike
 
+There are no mods here, but rather one should use this as a basis for making further projects.
+
+## Building
+
+Deps:
+- \*nix
+- make
+- gcc
+
+Just run `make`
+
 ## Decompilation (to C)
+
+This is just to update/create the original assembly source for reference. It's only used by developers. If you just want the recreated project, follow the basic build instructions above.
 
 Deps:
 - You need a ROM. I cannot give you a ROM. You must get a cartridge and rip it yourself.
-- You need the [RSDKv4 decompilation toolkit]()
-
-The initial decomp can be done with the `decomp.sh` script in the scripts folder.
-
-## Building Current Source
-
-Deps:
-- Linux
+- gcc
 - make
-- g++
+- \*nix
 
-Just run `make`
+Run:
+
+```
+git submodule init
+git submodule update --remote --checkout
+make ssfii-tnc.snes-asm
+```
 
