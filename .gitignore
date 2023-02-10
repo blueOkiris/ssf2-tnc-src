@@ -4,3 +4,7 @@
 # Don't want to keep the assembly when we can produce it.
 *.snes-asm
 
+# Build files
+*.o
+sfii-tnc
+
